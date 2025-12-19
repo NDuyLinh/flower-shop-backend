@@ -1,10 +1,29 @@
-HELP.md
+# Maven
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.properties
 
-### STS ###
+### Spring Boot ###
+HELP.md
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
 .apt_generated
 .classpath
 .factorypath
@@ -12,12 +31,9 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -25,26 +41,27 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
-=======
-# Compiled class file
-*.class
 
-# Log file
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Logs ###
 *.log
+logs/
+*.log.*
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+### Compiled ###
+*.class
 *.jar
 *.war
 *.nar
@@ -53,6 +70,20 @@ build/
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+### Runtime Data ###
+# Uploaded images (runtime data, will be replaced by S3/R2/CDN)
+uploads/
+
+### Local Configuration ###
+# Local config files containing DB credentials, secrets, and keys
+application-local.yml
+application-local.yaml
+application-local.properties
+
+### Temporary Files ###
+*.tmp
+*.bak
+*.swp
+*~.nib
 hs_err_pid*
 replay_pid*
